@@ -21,11 +21,11 @@ const SignInForm = props => {
           <Form>
 
             <Field name={'email'}>
-              {fieldProps => <Input {...fieldProps} placeholder="EMAIL"/>}
+              {fieldProps => <Input {...fieldProps} placeholder="Email address"/>}
             </Field>
 
             <Field name={'password'}>
-              {fieldProps => <Input {...fieldProps} type="password" />}
+              {fieldProps => <Input {...fieldProps} type="password" placeholder="Password" />}
             </Field>
 
             <Field type='submit' value='Submit' />
