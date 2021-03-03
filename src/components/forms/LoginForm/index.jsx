@@ -3,6 +3,7 @@ import { Formik, Form, Field } from 'formik';
 import PropTypes from 'prop-types';
 import { SIGN_IN_SCHEMA } from '../../../utils/validationSchemas';
 import Input from '../Input';
+import styles from './LoginForm.module.scss';
 
 const SignInForm = props => {
   const initialValues = {
@@ -18,17 +19,17 @@ const SignInForm = props => {
     >
       {formProps => {
         return (
-          <Form>
+          <Form className={styles.formWrapper}>
 
-            <Field name={'email'}>
-              {fieldProps => <Input {...fieldProps} placeholder="Email address"/>}
+            <Field name={'email'} >
+              {fieldProps => <Input {...fieldProps} placeholder="Email address" className={styles.inputWrapper}/>}
             </Field>
 
             <Field name={'password'}>
-              {fieldProps => <Input {...fieldProps} type="password" placeholder="Password" />}
+              {fieldProps => <Input {...fieldProps} type="password" placeholder="Password" className={styles.inputWrapper}/>}
             </Field>
 
-            <Field type='submit' value='Submit' />
+            <Field type='submit' value='Login' className={styles.btn} />
           </Form>
         );
       }}

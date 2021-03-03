@@ -1,0 +1,21 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  .inputWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px ;
+    margin-top: 15px;
+  }
+
+  .btn {
+    @extend .inputWrapper;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #23d3d1;
+    color: white;
+  }
+}
+

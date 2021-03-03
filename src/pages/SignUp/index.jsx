@@ -5,11 +5,11 @@ import Header from '../../components/forms/Header';
 const SignUp = props => {
   const onSubmit = values => console.log(values);
   return <div>
-    { <Header /> }
+      <Header /> 
       <h1>Create an account</h1>
       <p>We always keep your name and email address private.</p>
       <SignUpForm onSubmit={onSubmit} />
-      
+
   </div>;
 };
 

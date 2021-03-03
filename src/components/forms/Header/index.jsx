@@ -5,10 +5,15 @@ import styles from './Header.module.scss';
 const Header = props => {
   return (
     <div className={styles.headerWrapper}>
+
       <img src='/staticAssets/images/logoF.png' alt='logo' />
-      <Link to='/SignUp'>
-        <button className={styles.btn}>Sign up</button>
-      </Link>
+
+      <button className={styles.btn}>
+        <Link to='/sign-up' >
+          Sign up
+        </Link>
+      </button>
+      
     </div>
   );
 };
