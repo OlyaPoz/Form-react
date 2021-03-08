@@ -1,10 +1,9 @@
-.container {
-
-}
-
 .input {
-  padding: 5px 10px;
-  margin: 10px 0;
+  width: 100%;
+  padding: 25px 40px;
+  margin-top: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .validInput {
@@ -13,4 +12,34 @@
 
 .invalidInput {
   border: 2px solid red;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.errMessage {
+  position: absolute;
+  left: 0;
+  top: 260%;
+
+  z-index: 1;
+  padding: 20px;
+  border: 2px solid red;
+  background-color: rgb(199, 144, 144);
+  color: red;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.errMessage:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 12px 8px;
+  border-color: transparent transparent #ff0000 transparent;
 }

@@ -1,0 +1,21 @@
+.radioBtn {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  background-color: inherit;
+  border: 2px solid white;
+  padding: 10px 15px;
+  margin-top: 15px;
+
+  font-size: 1.5rem;
+  font-weight: lighter;
+
+  .radioInput {
+    margin: 10px;
+  }
+
+  .infoRadioBtn {
+    font-size: 0.8rem;
+  }
+}

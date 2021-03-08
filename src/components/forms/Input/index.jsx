@@ -4,7 +4,6 @@ import { ErrorMessage } from 'formik';
 import styles from './Input.module.scss';
 
 const Input = props => {
-  console.log(props);
   const { field, meta, form, ...rest } = props;
 
   const classNames = cx(styles.input, {
@@ -13,12 +12,12 @@ const Input = props => {
   });
 
   return (
-    <>
-      <label className={styles.container}>
+    <div >
+      <label className={styles.inputWrapper}>
         <input {...field} type='text' className={classNames} {...rest} />
-        <ErrorMessage component='span' name={field.name} />
+        <ErrorMessage component='span' name={field.name} className={styles.errMessage} />
       </label>
-    </>
+    </div>
   );
 };
 

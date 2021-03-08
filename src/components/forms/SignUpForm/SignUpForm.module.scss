@@ -5,6 +5,13 @@ $btn-color: #23d3d1;
   flex-direction: column;
   width: 500px;
 
+  .textInputWrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   
+  }
+
   .btn {
     width: 100%;
     padding: 20px;
@@ -12,7 +19,6 @@ $btn-color: #23d3d1;
     border: 1px solid $btn-color;
     border-radius: 5px;
     font-size: 1rem;
-    text-transform: uppercase;
     background-color: $btn-color;
     color: white;
     cursor: pointer;

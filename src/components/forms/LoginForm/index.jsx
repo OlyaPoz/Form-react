@@ -17,22 +17,20 @@ const SignInForm = props => {
       onSubmit={props.onSubmit}
       validationSchema={SIGN_IN_SCHEMA}
     >
-      {formProps => {
-        return (
+     
           <Form className={styles.formWrapper}>
 
             <Field name={'email'} >
-              {fieldProps => <Input {...fieldProps} placeholder="Email address" className={styles.inputWrapper}/>}
+              {fieldProps => <Input {...fieldProps} placeholder="Email address" autoFocus />}
             </Field>
 
             <Field name={'password'}>
-              {fieldProps => <Input {...fieldProps} type="password" placeholder="Password" className={styles.inputWrapper}/>}
+              {fieldProps => <Input {...fieldProps} type="password" placeholder="Password" />}
             </Field>
 
             <Field type='submit' value='Login' className={styles.btn} />
           </Form>
-        );
-      }}
+     
     </Formik>
   );
 };

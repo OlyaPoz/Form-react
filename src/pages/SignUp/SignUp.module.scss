@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+
+  .signUpHeading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 100px;
+  }
+
+  .signUpInfo {
+    font-size: 1rem;
+    margin: 15px;
+  }
+}
