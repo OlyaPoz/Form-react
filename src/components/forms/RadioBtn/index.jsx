@@ -7,10 +7,16 @@ const RadioBtn = props => {
     <>
       <label className={styles.radioBtn}>
         <span>
-          <input {...field} type='radio' name='join' value='buyer' className={styles.radioInput} />
+          <input
+            {...field}
+            type='radio'
+            name='join'
+            value='buyer'
+            className={styles.radioInput}
+          />
           Join As a Buyer
         </span>
-        <span className={styles.infoRadioBtn} >
+        <span className={styles.infoRadioBtn}>
           I am looking for a Name, Logo or Tagline for my business, brand or
           product.
         </span>
@@ -18,10 +24,16 @@ const RadioBtn = props => {
 
       <label className={styles.radioBtn}>
         <span>
-          <input {...field} type='radio' name='join' value='creative' className={styles.radioInput}  />
+          <input
+            {...field}
+            type='radio'
+            name='join'
+            value='creative'
+            className={styles.radioInput}
+          />
           Join As a Creative or Marketplace Seller
         </span>
-        <span className={styles.infoRadioBtn} >
+        <span className={styles.infoRadioBtn}>
           I plan to submit name ideas, Logo designs or sell names in Domain
           Marketplace.
         </span>

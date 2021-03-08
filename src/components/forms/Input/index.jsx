@@ -12,10 +12,14 @@ const Input = props => {
   });
 
   return (
-    <div >
+    <div>
       <label className={styles.inputWrapper}>
         <input {...field} type='text' className={classNames} {...rest} />
-        <ErrorMessage component='span' name={field.name} className={styles.errMessage} />
+        <ErrorMessage
+          component='span'
+          name={field.name}
+          className={styles.errMessage}
+        />
       </label>
     </div>
   );
