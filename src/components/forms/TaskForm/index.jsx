@@ -16,6 +16,10 @@ const TaskForm = props => {
       <Form>
         <Field name='todoBody' />
         <ErrorMessage name='todoBody' component='div' />
+        <Field
+              type='submit'
+              value='+ New task'
+            />
       </Form>
     </Formik>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const TaskItem = props => {
   const { body, id, isDone, deleteTask } = props;
 
@@ -10,7 +11,7 @@ const TaskItem = props => {
   return (
     <article>
       {body}
-      <button onClick={onDelete}>delete</button>
+      <button onClick={onDelete}>d</button>
     </article>
   );
 };

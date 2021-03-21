@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TaskForm from '../../components/forms/TaskForm';
 import TaskList from '../../components/TaskList';
+import TaskHeader from '../../components/TaskHeader';
 
 const ToDoPage = props => {
   const [todoArray, setTodoArray] = useState([
@@ -30,6 +31,7 @@ const ToDoPage = props => {
 
   return (
     <div>
+      <TaskHeader />
       <TaskForm onSubmit={addTask} />
       <TaskList todos={todoArray} deleteTask={deleteTask} />
     </div>
